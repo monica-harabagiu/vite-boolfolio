@@ -32,7 +32,7 @@ export default {
 <template>
 
     <main>
-        <h2>All Projects</h2>
+        <h2 class="mt-5">All Projects</h2>
 
         <div class="container my-5">
             <div class="row">
@@ -50,6 +50,10 @@ export default {
 </template>
 
 <style scoped>
+h2 {
+    text-align: center;
+}
+
 li {
     text-align: left;
 }

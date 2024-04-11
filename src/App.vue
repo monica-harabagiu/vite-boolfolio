@@ -1,16 +1,19 @@
 <script>
-import AppMain from './components/AppMain.vue'
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import { RouterView } from 'vue-router';
 
 export default {
   components: {
-    AppMain
+    AppMain,
+    AppHeader
   }
 }
 </script>
 
 <template>
-  
-  <AppMain />
+  <AppHeader />
+  <RouterView />
 </template>
 
 <style scoped>
