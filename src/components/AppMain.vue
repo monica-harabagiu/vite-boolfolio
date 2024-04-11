@@ -14,7 +14,7 @@ export default {
     },
     methods: {
         getProjects() {
-            axios.get('http://127.0.0.1:8001/api/test')
+            axios.get('http://127.0.0.1:8000/api/test')
                 .then(res => {
                     console.log(res.data.projects)
 
