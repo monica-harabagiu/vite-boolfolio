@@ -1,4 +1,6 @@
 <script>
+import { RouterLink } from 'vue-router';
+
 export default {
     name: "ProjectCard",
     props: [
@@ -12,7 +14,11 @@ export default {
         <div class="card text-start p-3 project-card">
 
             <div class="card-body">
-                <h4 class="card-title">{{ propElement.title }}</h4>
+                <h4 class="card-title">
+                    <RouterLink :to="{name: 'single-project', params: {slug: propElement.slug}}">
+                        {{ propElement.title }}
+                    </RouterLink> 
+                </h4>
                 <ul>
                     <li>
                         slug: <strong>{{ propElement.slug }}</strong>
